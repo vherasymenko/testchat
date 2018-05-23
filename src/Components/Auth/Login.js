@@ -43,15 +43,17 @@ class Login extends Component{
 
     render(){
         return (
-            <form className="form-signin for-form-style">
+            <form className="form-signin">
                 <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
-                <label className="sr-only">Email address</label>
                 <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" placeholder="Email address" required />
-                <label className="sr-only">Password</label>
                 <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" placeholder="Password" required />
-                <button onClick={this.loginUser} className="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-                <button onClick={this.signUpUser} className="btn btn-lg btn-success btn-block" type="submit">Sign Up</button>
-                <button onClick={this.googleAuth} className="btn btn-lg btn-danger btn-block" type="submit">Sign In with Google</button>
+                    <div className="button-group">
+                        <button onClick={this.loginUser} className="btn btn-lg btn-primary" type="submit">Log In</button>
+                        <button onClick={this.signUpUser} className="btn btn-lg btn-success" type="submit">Sign Up</button>
+                    </div>
+                     <div className="google-sign">
+                        <button onClick={this.googleAuth} className="btn btn-lg btn-danger" type="submit">Sign In with Google</button>
+                    </div>
             </form>
         )
      }
