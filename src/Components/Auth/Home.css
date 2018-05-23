@@ -102,7 +102,7 @@ textarea {
     background-color:#ff5656;
 }
 .my-message .user-message {
-    background-color: rgb(255, 0, 0)
+    background-color:rgba(0, 170, 255, 0.35)
 }
 
 .user-message .user-message-email {
