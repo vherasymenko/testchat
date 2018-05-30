@@ -4,16 +4,19 @@
   "private": true,
   "dependencies": {
     "firebase": "^5.0.2",
+    "jest": "^22.4.4",
+    "nodemon": "^1.17.5",
+    "puppeteer": "^1.4.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4",
-    "jest": "^22.4.4",
-    "puppeteer": "^1.4.0"
+    "selenium-webdriver": "^4.0.0-alpha.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "selenium-tests": "nodemon ./seleniumTests/googleTest.js"
   }
 }
