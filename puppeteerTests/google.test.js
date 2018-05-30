@@ -27,7 +27,7 @@ describe("Check opening google page", () => {
 
 test('Check searching results:', async() => {
     const searchQuery = 'TechMagic';
-    const title = 'TechMagic - Пошук Google';
+    const title = 'TechMagic - Google Search';
 
     await page.type('#lst-ib', searchQuery);
     await page.keyboard.press('Enter');
