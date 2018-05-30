@@ -7,7 +7,7 @@ const width = 1920;
 const height = 1080;
 
 beforeAll(async () => {
-    browser = await puppeteer.launch({headless: false});
+    browser = await puppeteer.launch({headless: true});
     page = await browser.newPage();
     await page.goto(URL);    
     await page.setViewport({width, height});
