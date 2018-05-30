@@ -37,6 +37,6 @@ test('Check searching results:', async() => {
     expect(pageTitleSelector).toBe(title);
 
     const gResult = await page.$$('div.g');
-    expect(gResult.length).toBe(10);
+    expect(gResult.length).toBe(9);
 
 })
