@@ -27,7 +27,7 @@ describe("Check opening google page", () => {
 
 test('Check searching results:', async() => {
     const searchQuery = 'TechMagic';
-    const title = 'TechMagic - Google Search';
+    const title = 'TechMagic - Пошук Google';
 
     await page.type('#lst-ib', searchQuery);
     await page.keyboard.press('Enter');
@@ -37,6 +37,6 @@ test('Check searching results:', async() => {
     expect(pageTitleSelector).toBe(title);
 
     const gResult = await page.$$('div.g');
-    console.log(gResult.lenght);
+    expect(gResult.lenght).toBe(gResult.lenght);
 
 })
